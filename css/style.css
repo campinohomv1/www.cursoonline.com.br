@@ -1,0 +1,1514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f6f8;
+
+    color: #1d1d1d;
+
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* ======================================
+   HEADER
+====================================== */
+
+.header {
+
+    width: 100%;
+
+    min-height: 75px;
+
+    padding: 15px 6%;
+
+    background: #111820;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+}
+
+
+.header nav {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.header nav a {
+
+    color: #ddd;
+
+    transition: .3s;
+
+}
+
+
+.header nav a:hover {
+
+    color: #f5a900;
+
+}
+
+
+.btn-header {
+
+    background: #f5a900;
+
+    color: #111;
+
+    padding: 11px 20px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+}
+
+/*-----
+          Validar*
+------------*/
+
+.btn-validar {
+    background: #ffffff;
+    color: rgb(85, 1, 1) !important;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-validar:hover {
+    background: #1d4ed8;
+}
+
+
+/* ======================================
+   HERO
+====================================== */
+
+.hero {
+
+    min-height: 620px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.90),
+            rgba(0,0,0,.45)
+        ),
+
+        url("../img/curso1.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.hero-content {
+
+    max-width: 750px;
+
+    color: white;
+
+}
+
+
+.tag {
+
+    display: inline-block;
+
+    background: #f5a900;
+
+    color: #111;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(40px,6vw,70px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 strong {
+
+    color: #f5a900;
+
+}
+
+
+.hero p {
+
+    font-size: 19px;
+
+    color: #eee;
+
+    max-width: 650px;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+.btn-primary,
+.btn-secondary {
+
+    padding: 14px 25px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+}
+
+
+.btn-primary {
+
+    background: #f5a900;
+
+    color: #111;
+
+}
+
+
+.btn-secondary {
+
+    border: 2px solid white;
+
+    color: white;
+
+}
+
+
+
+/* ======================================
+   SEÇÕES
+====================================== */
+
+.cursos,
+.beneficios,
+.como-funciona,
+.faq {
+
+    padding: 90px 7%;
+
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.section-title span {
+
+    color: #d88f00;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.section-title h2 {
+
+    font-size: 38px;
+
+    margin: 8px 0;
+
+}
+
+
+.section-title p {
+
+    color: #666;
+
+}
+
+
+
+/* ======================================
+   CURSOS
+====================================== */
+
+.cursos-grid {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 22px;
+
+}
+
+
+.curso-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.08);
+
+    transition: .3s;
+
+}
+
+
+.curso-card:hover {
+
+    transform: translateY(-7px);
+
+}
+
+
+.curso-img {
+
+    height: 210px;
+
+    position: relative;
+
+}
+
+
+.curso-img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.badge {
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 12px;
+
+    background: #f5a900;
+
+    color: #111;
+
+    padding: 6px 10px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+.curso-info {
+
+    padding: 22px;
+
+}
+
+
+.curso-info h3 {
+
+    font-size: 20px;
+
+    line-height: 1.25;
+
+    margin-bottom: 12px;
+
+}
+
+
+.curso-info p {
+
+    color: #666;
+
+    font-size: 14px;
+
+}
+
+
+.curso-bottom {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+}
+
+
+.curso-bottom small {
+
+    display: block;
+
+    color: #777;
+
+}
+
+
+.curso-bottom strong {
+
+    font-size: 23px;
+
+}
+
+
+.btn-comprar {
+
+    border: none;
+
+    background: #f5a900;
+
+    color: #111;
+
+    padding: 12px 15px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.btn-comprar:hover {
+
+    background: #111;
+
+    color: white;
+
+}
+
+
+
+/* ======================================
+   BENEFÍCIOS
+====================================== */
+
+.beneficios {
+
+    background: #111820;
+
+    color: white;
+
+}
+
+
+.beneficios .section-title p {
+
+    color: #bbb;
+
+}
+
+
+.beneficios-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+
+}
+
+
+.beneficio {
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background:
+        rgba(255,255,255,.05);
+
+    border-radius: 10px;
+
+}
+
+
+.icon {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.beneficio p {
+
+    color: #bbb;
+
+    font-size: 14px;
+
+}
+
+
+
+/* ======================================
+   PASSOS
+====================================== */
+
+.passos {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 25px;
+
+}
+
+
+.passo {
+
+    text-align: center;
+
+}
+
+
+.numero {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin:
+        auto auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f5a900;
+
+    color: #111;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+
+}
+
+
+.passo p {
+
+    color: #666;
+
+}
+
+
+
+/* ======================================
+   CERTIFICADO
+====================================== */
+
+.certificado {
+
+    padding: 70px 7%;
+
+    background: #f5a900;
+
+}
+
+
+.certificado-content {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.certificado-icon {
+
+    font-size: 80px;
+
+}
+
+
+.certificado-content h2 {
+
+    font-size: 36px;
+
+    line-height: 1.15;
+
+    margin: 8px 0 15px;
+
+}
+
+
+
+/* ======================================
+   FAQ
+====================================== */
+
+.faq-container {
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+details {
+
+    background: white;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+}
+
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+
+details p {
+
+    margin-top: 15px;
+
+    color: #666;
+
+}
+
+
+
+/* ======================================
+   MODAL PIX
+====================================== */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0,0,0,.80);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 9999;
+
+    overflow-y: auto;
+
+}
+
+
+.pix-box {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    position: relative;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.3);
+
+}
+
+
+.fechar {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 10px;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #111;
+
+    font-size: 34px;
+
+    cursor: pointer;
+
+    line-height: 40px;
+
+}
+
+
+.pix-logo {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 7px 15px;
+
+    background: #32bcad;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: 900;
+
+    margin-bottom: 12px;
+
+}
+
+
+.pix-topo h2 {
+
+    font-size: 25px;
+
+}
+
+
+#pixNomeCurso {
+
+    color: #666;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+
+}
+
+
+.pix-valor {
+
+    margin: 20px 0;
+
+    padding: 15px;
+
+    background: #f5f6f8;
+
+    border-radius: 10px;
+
+}
+
+
+.pix-valor small {
+
+    display: block;
+
+    color: #777;
+
+}
+
+
+.pix-valor strong {
+
+    display: block;
+
+    font-size: 34px;
+
+    color: #111;
+
+}
+
+
+.qr-area {
+
+    margin-top: 10px;
+
+}
+
+
+.qr-area p {
+
+    color: #555;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.qr-code {
+
+    width: 210px;
+
+    height: 210px;
+
+    object-fit: contain;
+
+    border: 1px solid #ddd;
+
+    padding: 8px;
+
+    background: white;
+
+}
+
+
+
+/* CHAVE PIX */
+
+.chave-area {
+
+    margin-top: 20px;
+
+    text-align: left;
+
+}
+
+
+.chave-area label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+}
+
+
+.chave-box {
+
+    display: flex;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+
+}
+
+
+.chave-box input {
+
+    width: 100%;
+
+    min-width: 0;
+
+    border: none;
+
+    padding: 13px;
+
+    outline: none;
+
+    font-size: 13px;
+
+    background: #f7f7f7;
+
+}
+
+
+.chave-box button {
+
+    border: none;
+
+    background: #111820;
+
+    color: white;
+
+    padding: 0 15px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+.chave-box button:hover {
+
+    background: #333;
+
+}
+
+
+
+/* INSTRUÇÕES */
+
+.pix-instrucoes {
+
+    text-align: left;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #f8f8f8;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+}
+
+
+.pix-instrucoes strong {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+}
+
+
+.pix-instrucoes p {
+
+    color: #666;
+
+}
+
+
+
+/* COMPROVANTE */
+
+.btn-comprovante {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #25d366;
+
+    color: white;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+
+.btn-comprovante:hover {
+
+    background: #128c7e;
+
+    transform: translateY(-2px);
+
+}
+
+
+.pix-seguranca {
+
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 12px;
+
+}
+
+
+
+/* ======================================
+   WHATSAPP FLUTUANTE
+====================================== */
+
+.whatsapp-flutuante {
+
+    position: fixed;
+
+    right: 22px;
+
+    bottom: 22px;
+
+    width: 62px;
+
+    height: 62px;
+
+    background: #25d366;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.25);
+
+    z-index: 9000;
+
+    transition: .3s;
+
+}
+
+
+.whatsapp-flutuante:hover {
+
+    transform: scale(1.1);
+
+    background: #128c7e;
+
+}
+
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer {
+
+    background: #0b1015;
+
+    color: white;
+
+    padding: 50px 7% 20px;
+
+}
+
+
+.footer-content {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+.footer-content h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.footer-content p {
+
+    color: #aaa;
+
+}
+
+
+.footer-content a {
+
+    display: block;
+
+    color: #aaa;
+
+    margin-bottom: 5px;
+
+}
+
+
+.copyright {
+
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #333;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+
+/* ======================================
+   TABLET
+====================================== */
+
+@media (max-width: 1000px) {
+
+    .cursos-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .beneficios-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .passos {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .header nav {
+
+        display: none;
+
+    }
+
+}
+
+
+
+/* ======================================
+   CELULAR
+====================================== */
+
+@media (max-width: 600px) {
+
+
+    .header {
+
+        padding: 15px 5%;
+
+    }
+
+
+    .btn-header {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        min-height: 600px;
+
+        padding: 60px 6%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .btn-primary,
+    .btn-secondary {
+
+        text-align: center;
+
+    }
+
+
+    .cursos,
+    .beneficios,
+    .como-funciona,
+    .faq {
+
+        padding:
+            65px 5%;
+
+    }
+
+
+    .section-title h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .cursos-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .beneficios-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .passos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .certificado-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .certificado-content h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .footer-content {
+
+        flex-direction: column;
+
+    }
+
+
+    .curso-bottom {
+
+        align-items: center;
+
+    }
+
+
+    .pix-box {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .qr-code {
+
+        width: 190px;
+
+        height: 190px;
+
+    }
+
+
+    .chave-box button {
+
+        padding: 0 10px;
+
+        font-size: 11px;
+
+    }
+
+
+    .whatsapp-flutuante {
+
+        width: 55px;
+
+        height: 55px;
+
+        right: 15px;
+
+        bottom: 15px;
+
+        font-size: 28px;
+
+    }
+
+}
+
+
+
+/*Validação de Certificado*/
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card input {
+    width: 100%;
+    padding: 14px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.card button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sucesso {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ecfdf5;
+    border: 1px solid #10b981;
+}
+
+.sucesso h3 {
+    color: #047857;
+}
+
+.erro {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fef2f2;
+    border: 1px solid #ef4444;
+}
+
+.erro h3 {
+    color: #b91c1c;
+}
+
+/*Validação de certificado*/
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card input {
+    width: 100%;
+    padding: 14px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.card button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sucesso {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ecfdf5;
+    border: 1px solid #10b981;
+}
+
+.sucesso h3 {
+    color: #047857;
+}
+
+.erro {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fef2f2;
+    border: 1px solid #ef4444;
+}
+
+.erro h3 {
+    color: #b91c1c;
+}

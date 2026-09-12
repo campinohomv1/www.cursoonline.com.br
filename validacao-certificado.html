@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Validar Certificado</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Validação de Certificado</h1>
+        <p>Consulte a autenticidade do seu certificado</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+
+            <h2>Consultar certificado</h2>
+
+            <p>
+                Digite o código de autenticação presente no certificado.
+            </p>
+
+            <input
+                type="text"
+                id="codigo"
+                placeholder="Ex: CURSO-2026-000157"
+            >
+
+            <button onclick="validarCertificado()">
+                Validar certificado
+            </button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Sua Instituição</p>
+    </footer>
+
+    <script src="js/validacao.js"></script>
+
+</body>
+</html>
